@@ -1,0 +1,11 @@
+.navbar-toggler {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-bar {
+    /* display: inline-block; */
+    width: 5px;
+    height: 1px;
+    background-color: #000;
+}
