@@ -52,7 +52,7 @@
     padding: 1.5rem 0;
   }
 
-  .container, .form {
+  .container {
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
@@ -66,6 +66,28 @@
   .main h1 {
     margin: 1.5em 0 1em 0;
     line-height: 1.1em;
+  }
+
+  /* Hero Section */
+  .mail-input, .mail-button {
+    width: 100%;
+    min-height: 2.5em;
+    margin-bottom: 1em;
+    font-size: 0.9rem;
+    outline: none;
+  }
+
+  .mail-input {
+    padding-left: 1em;
+  }
+
+  .form {
+    margin-top: 1.5em;
+  }
+
+  .partners h2 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
   }
 
   /******************************************
