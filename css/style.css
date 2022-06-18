@@ -59,13 +59,17 @@
     position: relative;
   }
 
+  .img {
+    width: 100%;
+  }
+
   /******************************************
   /* LAYOUT
   /*******************************************/
 
   .main h1 {
     margin: 1.5em 0 1em 0;
-    line-height: 1.1em;
+    line-height: 2.5rem;
   }
 
   /* Hero Section */
@@ -81,7 +85,6 @@
 
   .mail-input {
     padding-left: 1em;
-    /* border: 1px solid #000; */
     background-color: #ccc;
   }
 
@@ -107,6 +110,63 @@
     row-gap: 1em;
   }
   
+
+  /* Product1 Section */
+  .feature-image {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5em;
+  }
+
+  .image-banner {
+    height: 275px;
+    width: 100%;
+    background-image: url('../img/oj3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .product-text h2 {
+    line-height: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .product-text p {
+    margin-bottom: 0.875em;
+  }
+
+  .product-feature {
+    position: relative;
+  }
+
+  .product-feature li {
+    margin-left: 4em;
+  }
+
+  .product-feature li::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1.5em;
+    content: '\f019';
+    display: inline;
+    position: absolute;
+    left: 0;
+    color: #f00;
+    background-color: #ccc;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0.625em;
+  }
+
+  .product-feature h3 {
+    font-size: 1rem;
+  }
 
   /******************************************
   /* ADDITIONAL STYLES
