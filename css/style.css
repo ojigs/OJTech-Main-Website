@@ -165,7 +165,6 @@
     height: 50px;
     align-items: center;
     justify-content: center;
-    /* padding: 0.625em; */
     vertical-align: text-bottom;
   }
 
@@ -181,9 +180,44 @@
     content: '\24';
   }
 
-
   .product-feature h3 {
     font-size: 1rem;
+  }
+
+  /* Product 2 Section */
+  .card {
+    margin-bottom: 1em;
+  }
+
+  .collapsible {
+    background-color: #ccc;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: left;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #aaa;
+  }
+
+  .collapsible::after {
+    content: '\f107';
+    color: #f00;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    float: right;
+    
+  }
+
+  .content {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f8f9fa;
   }
 
   /******************************************
