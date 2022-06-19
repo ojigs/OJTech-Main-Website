@@ -209,7 +209,10 @@
     font-family: 'Font Awesome 5 Free';
     font-weight: 700;
     float: right;
-    
+  }
+
+  .active::after {
+    content: '\f106';
   }
 
   .content {
@@ -218,6 +221,15 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f8f9fa;
+  }
+
+  .content p {
+    padding-top: 1rem;
+  }
+
+  .color-red {
+    background-color: #f00;
+    color: white;
   }
 
   /******************************************
