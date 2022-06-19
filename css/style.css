@@ -279,6 +279,25 @@
     display: block;
   }
 
+  /* footer */
+  .footer {
+    background-color: #ccc;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 2em;
+  }
+
+  .copyright h6 {
+    font-weight: 400;
+  }
+
+  .copyright {
+    border-top: 1px solid #555;
+    padding: 0.85em;
+  }
+
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
