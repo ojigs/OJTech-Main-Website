@@ -262,6 +262,23 @@
     margin-bottom: 0.4em;
   }
 
+  /* Product 4 Section */
+  .pocket {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .pocket::after {
+    display: none;
+  }
+
+  .pocket:hover {
+    border-left: 5px solid red;
+  }
+
+  .pocket:hover::after {
+    display: block;
+  }
+
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
