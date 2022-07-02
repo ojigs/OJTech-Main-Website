@@ -48,6 +48,14 @@
     color: red;
   }
 
+  .white {
+    color: #ffffff
+  }
+
+  .bg-red {
+    background-color: #ff0000;
+  }
+
   section, footer {
     padding: 1.5rem 0;
   }
@@ -277,6 +285,14 @@
 
   .pocket:hover::after {
     display: block;
+  }
+
+  /* Newsletter Section */
+  .newsletter .mail-button {
+    background-color: #ccc;
+    color: #ff0000;
+    font-weight: 700;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
 
   /* footer */
