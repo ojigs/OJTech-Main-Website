@@ -39,6 +39,11 @@
   h4 {
     font-size: 1.2rem;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   
   .text-center {
     text-align: center;
@@ -312,6 +317,7 @@
   .copyright {
     border-top: 1px solid #555;
     padding: 0.85em;
+    color:rgba(0, 0, 0, 0.5);
   }
 
   /******************************************
