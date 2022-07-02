@@ -109,6 +109,7 @@
   .mail-button {
     background-color: #f00;
     color: #fff;
+    padding: 0 1em;
   }
 
   .form {
@@ -127,6 +128,37 @@
     flex-wrap: wrap;
     row-gap: 1em;
   }
+
+  /* Media Queries */
+    @media screen and (min-width: 479px) {
+      .form form {
+        display: flex;
+        max-width: 350px;
+        margin: auto;
+        justify-content: space-between;
+        background-color: #ccc;
+        padding: 3px;
+        border-radius: 5px;
+      }
+
+      .mail-input, .mail-button {
+        margin-bottom: 0;
+      }
+
+      .input {
+        flex-grow: 2;
+      }
+    }
+
+    @media screen and (min-width: 850px) {
+      section, footer {
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .main-section {
+        max-width: 600px;
+      }
+    }
   
 
   /* Product1 Section */
@@ -200,6 +232,26 @@
 
   .product-feature h3 {
     font-size: 1rem;
+  }
+
+  /* Media Queries */ 
+  @media screen and (min-width: 850px) {
+    .product .container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .feature-image, .product-text {
+      width: 50%;
+    }
+
+    .product-text {
+      margin-right: 5em;
+    }
+
+    .feature-image {
+      min-height: 100%;
+    }
   }
 
   /* Product 2 Section */
