@@ -44,6 +44,10 @@
     text-decoration: none;
     color: inherit;
   }
+
+  strong {
+    font-weight: 700;
+  }
   
   .text-center {
     text-align: center;
@@ -152,7 +156,7 @@
 
     @media screen and (min-width: 850px) {
       section, footer {
-        padding: 1.5rem 100px 100px 100px
+        padding: 1.5rem 6.25rem 6.25rem
       }
 
       .partners {
@@ -360,14 +364,31 @@
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
 
+  /* Media Queries */
+    @media screen and (min-width: 850px) {
+      .newsletter {
+        padding-top: 3rem;
+      }
+    }
+
   /* footer */
   .footer {
     background-color: #ccc;
   }
 
+  .footer-row h5 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
   .social-links {
     display: flex;
     gap: 2em;
+  }
+
+  .contact-list li {
+    margin-bottom: 1.25em;
   }
 
   .copyright h6 {
@@ -380,7 +401,47 @@
     color:rgba(0, 0, 0, 0.5);
   }
 
+  /* Media Queries */
+  @media screen and (min-width: 850px) {
+    footer {
+      padding-bottom: 1.5rem;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6.25rem 0;
+    }
+
+    .about, .contact, .follow {
+      flex-basis: 33.33%;
+    }
+
+    .footer-row section {
+      padding: 1.5rem;
+    }
+  }
+
   /******************************************
   /* ADDITIONAL STYLES
+  /*******************************************/
+  /* Dark theme */
+
+  @media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: #330000;
+      color: white;
+    }
+
+    .footer, .feature-image, .collapsible {
+      background-color: #555;
+      color: white;
+    }
+
+    .content {
+      background-color: #aaa;
+    }
+  }
+
   /*******************************************/
   
