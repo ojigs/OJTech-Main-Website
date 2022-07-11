@@ -55,6 +55,7 @@
       font-size: 1.5rem;
     }
   }
+  /******************/
   
 
   a {
@@ -129,10 +130,10 @@
   .mail-button {
     background-color: #f00;
     color: #fff;
-    padding: 0 3em;
+    padding: 0 1.5em;
     width: auto;
     font-size: 1.2rem;
-    border-radius: 1.25em;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
@@ -177,6 +178,11 @@
       .input {
         flex-grow: 2;
       }
+
+      .partners-container img {
+        width: 135px;
+        height: 45px;
+      }
     }
 
     @media screen and (min-width: 850px) {
@@ -194,6 +200,10 @@
 
       .main-section {
         max-width: 600px;
+      }
+
+      .mail-button {
+        padding: 0 3em;
       }
     }
   
@@ -384,17 +394,38 @@
   }
 
   /* Newsletter Section */
-  .newsletter .mail-button {
-    background-color: #ccc;
-    color: #ff0000;
-    font-weight: 700;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  .newsletter .container{
+    background-color: rgba(178, 34, 34, 0.5);
+    padding: 1.5rem;
+  }
+
+  .news h2, .news p {
+    margin-bottom: 1em;
   }
 
   /* Media Queries */
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 645px) {
       .newsletter {
-        padding-top: 3rem;
+        padding: 1.5rem;
+      }
+
+      .newsletter .container {
+        padding: 50px;
+        border-radius: 10px;
+      }
+
+      .news h2, .news p {
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    @media screen and (min-width: 850px) {
+      .newsletter .container {
+        padding-left: 100px;
+      }
+
+      .news {
+        max-width: 450px;
       }
     }
 
@@ -469,9 +500,9 @@
       background-color: rgba(255, 51, 51, 0.5);
     }
 
-    .newsletter {
+    /* .newsletter {
       background-color: rgba(255, 0, 0, 0.5);
-    }
+    } */
 
     .footer h5 {
       color: rgba(255, 0, 0, 0.7);;
