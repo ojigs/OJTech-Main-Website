@@ -42,7 +42,7 @@
   }
 
   /* Media queries */
-  @media screen and (min-width: 592px) {
+  @media screen and (min-width: 850px) {
     h1 {
       font-size: 3rem;
     }
@@ -107,6 +107,9 @@
   /* LAYOUT
   /*******************************************/
 
+  .main {
+    position: relative;
+  }
   .main h1 {
     margin: 1.5em 0 1em 0;
   }
@@ -159,6 +162,10 @@
     row-gap: 1em;
   }
 
+  .shapes > div {
+    display: none;
+  }
+
   /* Media Queries */
     @media screen and (min-width: 479px) {
       .form form {
@@ -179,10 +186,6 @@
         flex-grow: 2;
       }
 
-      .partners-container img {
-        width: 135px;
-        height: 45px;
-      }
     }
 
     @media screen and (min-width: 850px) {
@@ -204,6 +207,52 @@
 
       .mail-button {
         padding: 0 3em;
+      }
+
+      .partners-container img {
+        width: 135px;
+        height: 45px;
+      }
+
+      .shapes > div {
+        position: absolute;
+        font-size: 0.625rem;
+        display: block;
+      }
+    
+      #star1 {
+        top: 20%;
+        left: 20%;
+      }
+    
+      #star2 {
+        bottom: 38%;
+        right: 20%;
+      }
+    
+      #circle1 {
+        top: 55%;
+        left: 35%;
+      }
+    
+      #circle2 {
+        top: 27%;
+        right: 25%;
+      }
+    
+      #naira {
+        bottom: 47%;
+        left: 8%;
+      }
+    
+      #steth {
+        top: 18%;
+        right: 8%;
+      }
+    
+      #briefcase {
+        top: 7%;
+        right: 35%;
       }
     }
   
