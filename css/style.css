@@ -106,15 +106,28 @@
   /******************************************
   /* LAYOUT
   /*******************************************/
+  /* Nav */
+  .header {
+    position: relative;
+  }
 
+  .navbar-toggler {
+    display: block;
+  }
+
+  .nav-item:hover a {
+    color: #ff0000;
+  }
+
+  /* Hero Section */
   .main {
     position: relative;
   }
+
   .main h1 {
     margin: 1.5em 0 1em 0;
   }
 
-  /* Hero Section */
   .mail-input, .mail-button {
     width: 100%;
     min-height: 2.5em;
@@ -253,6 +266,43 @@
       #briefcase {
         top: 7%;
         right: 35%;
+      }
+
+      /* Navigation */
+      .header {
+        margin-bottom: 1em;
+      }
+
+      .navbar {
+        padding: 2em;
+        padding-left: 1em;
+      }
+
+      .navbar-toggler {
+        display: none;
+      }
+
+      .navbar .container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .navbar-nav {
+        display: flex;
+        gap: 4.5em;
+      }
+
+      .nav-item:last-child a{
+        background-color: #ff0000;
+        padding: 0.75em 1.5em;
+        border-radius: 12px;
+        border: 1px solid red;
+        color: #fff;
+      }
+
+      .nav-item:last-child:hover a {
+        background-color: transparent;
+        color: #ff0000;
       }
     }
   
@@ -507,9 +557,13 @@
   }
 
   .footer-row h5 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
+  }
+
+  .footer {
+    font-size: 0.825rem;
   }
 
   .social-links {
@@ -517,8 +571,16 @@
     gap: 2em;
   }
 
+  .social-links li, .other-links li {
+    margin-bottom: 1.25em;
+  }
+
   .contact-list li {
     margin-bottom: 1.25em;
+  }
+
+  .contact-list a {
+    text-decoration: underline;
   }
 
   .copyright h6 {
@@ -572,20 +634,26 @@
       background-color: rgba(255, 51, 51, 0.5);
     }
 
-    /* .newsletter {
-      background-color: rgba(255, 0, 0, 0.5);
-    } */
-
-    /* .footer h5 {
-      color: rgba(255, 0, 0, 0.7);;
-    } */
-
     .content {
       background-color: rgba(225, 0, 0, 0.1);
     }
 
     .mms-feature:hover {
       color: #fff;
+    }
+
+    .sep img {
+      height: 20px;
+    }
+
+    .copyright {
+      color: #ccc;
+    }
+
+    @media screen and (min-width: 850px) {
+      .sep img {
+        height: 30px;
+      }
     }
   }
 
