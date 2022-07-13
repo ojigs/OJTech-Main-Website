@@ -155,6 +155,7 @@
     cursor: pointer;
     order: 1;
     color: #f00;
+    z-index: 2;
   }
 
   .navbar-toggler > span {
@@ -737,6 +738,10 @@
     @media screen and (min-width: 850px) {
       .sep img {
         height: 30px;
+      }
+
+      .navbar-collapse {
+        background-color: transparent;
       }
     }
   }

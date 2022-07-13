@@ -21,7 +21,6 @@ navbarToggler.addEventListener('click', function() {
     navbarCollapse.classList.toggle('navbar-active')
     this.style.display = 'none'
     navbarClose.style.display = 'block'
-    navbarClose.style.zIndex = '1'
 
     console.log('click happened')
 })
