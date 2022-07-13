@@ -1,4 +1,7 @@
 const collapsibleButton = document.querySelectorAll('.collapsible')
+const navbarToggler = document.querySelector('.navbar-toggler')
+const navbarClose = document.querySelector('.navbar-close')
+const navbarCollapse = document.querySelector('.navbar-collapse')
 
 
 for (let i=0; i < collapsibleButton.length; i++) {
@@ -12,3 +15,21 @@ for (let i=0; i < collapsibleButton.length; i++) {
         }
     })
 }
+
+// Navigation toggler
+navbarToggler.addEventListener('click', function() {
+    navbarCollapse.classList.toggle('navbar-active')
+    this.style.display = 'none'
+    navbarClose.style.display = 'block'
+    navbarClose.style.zIndex = '1'
+
+    console.log('click happened')
+})
+
+navbarClose.addEventListener('click', function() {
+    navbarCollapse.classList.remove('navbar-active')
+    this.style.display = 'none'
+    navbarToggler.style.display = 'block'
+
+    console.log('click happened')
+})

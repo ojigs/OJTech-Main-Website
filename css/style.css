@@ -18,6 +18,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.6em;
+    position: relative;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -107,15 +108,78 @@
   /* LAYOUT
   /*******************************************/
   /* Nav */
-  .header {
-    position: relative;
+  .navbar {
+    padding: 1.5em;
+  }
+
+  .navbar .container {
+    position: static;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    display: inline-block;
   }
 
   .navbar-toggler {
     display: block;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
   }
 
-  .nav-item:hover a {
+  .navbar-collapse {
+    display: none;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 90vw;
+    padding: 2em;
+  }
+
+  .navbar-active{
+    display: block;
+  }
+
+  .navbar-close {
+    display: none;
+    font-size: 60px;
+    cursor: pointer;
+    order: 1;
+    color: #f00;
+  }
+
+  .navbar-toggler > span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    border-radius: 2.5px;
+    background-color: #000;
+    margin-bottom: 5px;
+  }
+
+  .navbar-toggler > span:last-child {
+    margin-bottom: 0;
+  }
+
+  .navbar-nav {
+    position: relative;
+    top: 20px;
+  }
+
+  .nav-item {
+    margin-bottom: 2em;
+  }
+
+  .nav-item a:hover {
     color: #ff0000;
   }
 
@@ -278,18 +342,30 @@
         padding-left: 1em;
       }
 
-      .navbar-toggler {
-        display: none;
+      .navbar-toggler, .navbar-close {
+        display: none !important;
       }
 
       .navbar .container {
-        display: flex;
-        justify-content: space-between;
+        padding: 0 1rem
+      }
+
+      .navbar-brand {
+        position: relative;
+      }
+
+      .navbar-collapse {
+        display: block;
+        position: relative;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
       }
 
       .navbar-nav {
         display: flex;
         gap: 4.5em;
+        top: 0;
       }
 
       .nav-item:last-child a{
@@ -648,6 +724,14 @@
 
     .copyright {
       color: #ccc;
+    }
+
+    .navbar-collapse {
+      background-color: rgba(70, 0, 0);
+    }
+
+    .navbar-toggler > span {
+      background-color: #fff;
     }
 
     @media screen and (min-width: 850px) {
