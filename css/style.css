@@ -13,6 +13,10 @@
 
   html, body {
     height: 100%;
+  }
+
+  body {
+    background-color: #fefefe;
     color: #000;
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
@@ -357,9 +361,15 @@
 
     }
 
+    @media screen and (min-width: 675px) and (max-width: 849px) {
+      section, .footer {
+        padding: 1.5rem 3.125rem 3.125rem;
+      }
+    }
+
     @media screen and (min-width: 850px) {
       section, footer {
-        padding: 1.5rem 6.25rem 6.25rem
+        padding: 1.5rem 6.25rem 6.25rem;
       }
 
       .partners {
@@ -506,7 +516,7 @@
   }
 
   /* Media Queries */ 
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 1080px) {
     .product .container {
       display: flex;
       flex-direction: row-reverse;
@@ -713,7 +723,13 @@
   }
 
   /* Media Queries */
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 675px) {
+    footer, .footer section {
+      padding: 1.5rem 3.125rem;
+    }
+  }
+
+  @media screen and (min-width: 1080px) {
     footer {
       padding-bottom: 1.5rem;
     }
@@ -722,14 +738,62 @@
       display: flex;
       justify-content: space-between;
       padding: 6.25rem 0;
+      flex-wrap: wrap;
     }
 
-    .about, .contact, .follow {
-      flex-basis: 33.33%;
+    .about, .contact, .follow, .blog {
+      flex-basis: 25%;
     }
 
     .footer-row section {
       padding: 1.5rem;
+    }
+  }
+
+  /* Curved Para */
+  .para1, .para2 {
+    display: inline-block;
+    position: absolute;
+    top: -120px;
+    left: -20px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #555;
+    border-start-end-radius: 25% 50%;
+    border-end-end-radius: 100% 100%;
+    border-end-start-radius: 50% 25%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+
+  .para2 {
+    top: -100px;
+    left: -20px;
+    width: 300px;
+    height: 200px;
+    border-start-end-radius: 10% 25%;
+    border-end-end-radius: 100% 125%;
+  }
+
+  @media screen and (min-width: 850px) {
+    .para1 {
+      top: -20px;
+      left: -20px;
+      width: 250px;
+      height: 250px;
+      border-start-end-radius: 25% 50%;
+      border-end-end-radius: 100% 100%;
+      border-end-start-radius: 50% 25%;
+      border-start-start-radius: 63px 125px;
+    }
+
+    .para2 {
+      top: -20px;
+      left: -20px;
+      width: 300px;
+      height: 200px;
+      border-start-end-radius: 10% 25%;
+      border-end-end-radius: 100% 125%;
     }
   }
 
@@ -777,6 +841,10 @@
       background-color: #fff;
     }
 
+    .para1, .para2 {
+      border-color: #ccc;
+    }
+
     .dropdown {
       background-color: rgba(70, 0, 0);
     }
@@ -791,6 +859,5 @@
       }
     }
   }
-
   /********************************************/
   
