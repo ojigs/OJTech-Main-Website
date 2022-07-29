@@ -448,12 +448,24 @@
   }
 
   .image-banner {
-    height: 275px;
+    min-height: 300px;
     width: 100%;
-    background-image: url('../img/oj3.jpg');
+    background-image: url('../img/MMS\ Image.png');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
+  }
+
+  .ers-banner {
+    background-image: url("../img/EHRS\ IMAGES.png");
+  }
+
+  .drs-banner {
+    background-image: url("../img/DRS.png");
+  }
+
+  .image-banner > img {
+    max-width: 100%;
   }
 
   .product-text h2 {
