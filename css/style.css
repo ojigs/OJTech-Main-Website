@@ -445,15 +445,18 @@
     padding: 1em;
     border-radius: 5px;
     margin-bottom: 1.5em;
+    position: relative;
+    overflow: hidden;
   }
 
   .image-banner {
     min-height: 300px;
     width: 100%;
-    background-image: url('../img/MMS\ Image.png');
+    /* background-image: url('../img/MMS\ Image.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
+    position: relative;
   }
 
   .ers-banner {
@@ -544,7 +547,7 @@
 
     .feature-image {
       min-height: 550px;
-      align-self: center;
+      /* align-self: center; */
     }
   }
 
@@ -787,6 +790,19 @@
     border-end-end-radius: 100% 125%;
   }
 
+  .cir-cir-1, .cir-cir-2 {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .cir-cir-2 {
+    width: 250px;
+    height: 250px;
+  }
+
   @media screen and (min-width: 850px) {
     .para1 {
       top: -20px;
@@ -806,6 +822,23 @@
       height: 200px;
       border-start-end-radius: 10% 25%;
       border-end-end-radius: 100% 125%;
+    }
+
+    .cir-cir-1 {
+      top: -7px;
+      right: -250px;
+      width: 500px;
+      height: calc(50% + 50px);
+      border-end-start-radius: 100% 100%;
+      border-end-end-radius: 100% 100%;
+      border-start-start-radius: 25% 100%;
+    }
+
+    .cir-cir-2 {
+      top: -30px;
+      right: -160px;
+      width: 400px;
+      height: calc(50% + 30px);
     }
   }
 
