@@ -459,13 +459,13 @@
     position: relative;
   }
 
-  .ers-banner {
-    background-image: url("../img/EHRS\ IMAGES.png");
+  /* .ers-banner {
+    background-image: url("../img/EHRS\ IMAGES-compressed.jpg");
   }
 
   .drs-banner {
-    background-image: url("../img/DRS.png");
-  }
+    background-image: url("../img/DRS-compressed.jpg");
+  } */
 
   .image-banner > img {
     max-width: 100%;
