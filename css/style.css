@@ -452,23 +452,16 @@
   .image-banner {
     min-height: 300px;
     width: 100%;
-    /* background-image: url('../img/MMS\ Image.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
     position: relative;
   }
 
-  /* .ers-banner {
-    background-image: url("../img/EHRS\ IMAGES-compressed.jpg");
-  }
-
-  .drs-banner {
-    background-image: url("../img/DRS-compressed.jpg");
-  } */
-
   .image-banner > img {
+    width: 100%;
     max-width: 100%;
+    height: auto;
   }
 
   .product-text h2 {
@@ -547,8 +540,20 @@
 
     .feature-image {
       min-height: 550px;
+      position: relative;
       /* align-self: center; */
     }
+
+    /* .image-banner {
+      position: absolute;
+      top: 1em;
+      animation: slide 10s linear infinite alternate;
+    }
+
+    @keyframes slide {
+      from {top: 1em;}
+      to {top: calc(100% - (450px + 1em));}
+    } */
   }
 
   /* Product 2 Section */
@@ -659,8 +664,8 @@
     display: block;
   }
 
-  /* Newsletter Section */
-  .newsletter .container{
+  /* Team Section */
+  .team .container{
     background-color: rgba(225, 0, 0, 0.1);
     padding: 1.5rem;
   }
@@ -669,13 +674,17 @@
     margin-bottom: 1em;
   }
 
+  .team-image {
+    display: none;
+  }
+
   /* Media Queries */
     @media screen and (min-width: 645px) {
-      .newsletter {
+      .team {
         padding: 1.5rem;
       }
 
-      .newsletter .container {
+      .team .container {
         padding: 50px;
         border-radius: 10px;
       }
@@ -685,9 +694,22 @@
       }
     }
 
-    @media screen and (min-width: 850px) {
-      .newsletter .container {
+    @media screen and (min-width: 1080px) {
+      .team .container {
         padding-left: 100px;
+      }
+
+      .team-image{
+        display: block;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-left: 2em;
+      }
+
+      .team-image img {
+        width: 100%;
       }
 
       .news {
