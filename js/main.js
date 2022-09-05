@@ -3,6 +3,7 @@ const navbarToggler = document.querySelector('.navbar-toggler')
 const navbarClose = document.querySelector('.navbar-close')
 const navbarCollapse = document.querySelector('.navbar-collapse')
 const source = document.querySelectorAll('source')
+const partners = document.querySelectorAll('.partners-container')
 
 
 for (let i=0; i < collapsibleButton.length; i++) {
@@ -32,13 +33,16 @@ navbarClose.addEventListener('click', function() {
 
 //Dark mode toggler: changes partners image source
   document.addEventListener('colorschemechange', (e) => {
-    console.log(`Color scheme changed to ${e.detail.colorScheme}.`);
     source.forEach(src => {
-        if (e.detail.colorScheme == 'dark') {
-            src.setAttribute('media', '(prefers-color-scheme: dark)') 
+        if (e.detail.colorScheme == 'light') {
+            let reSrcset = src.srcset.replace('re-', '')
+            src.setAttribute('srcset', reSrcset) 
         } else {
-            src.setAttribute('media', '(prefers-color-scheme: light)')
-        }
-        
+            let re = src.srcset.slice(0, 4) + 're-' + src.srcset.slice(4)
+            if (re.includes('re-re')) {
+                re = re.replace('re-re', 're')
+            }
+            src.setAttribute('srcset', re)
+        }   
     })
   });
