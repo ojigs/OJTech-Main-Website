@@ -869,7 +869,7 @@
   /*******************************************/
   /* Dark theme */
 
-  @media screen and (prefers-color-scheme: dark) {
+  /* @media screen and (prefers-color-scheme: dark) {
     body {
       background-color: #330000;
       color: white;
@@ -926,5 +926,49 @@
       }
     }
   }
+   */
+  /* Dark mode toggler web component */
+  aside {
+    position: absolute;
+    right: 0;
+    padding: 0.5rem;
+    z-index: 1;
+  }
+
+  #dark-mode-toggle-2 {
+    --dark-mode-toggle-dark-icon: url("sun.svg");
+    --dark-mode-toggle-light-icon: url("moon.svg");
+    --dark-mode-toggle-icon-size: 2rem;
+    --dark-mode-toggle-icon-filter: invert(100%);
+  }
+
+  dark-mode-toggle::part(toggleLabel) {
+    vertical-align: top;
+  }
+
+  @media screen and (min-width: 850px) and (max-width: 949px) {
+    .nav-item:first-of-type {
+      position: absolute;
+      right: 0;
+      top: 50px;
+    }
+  }
+
+  @media screen and (min-width: 950px) {
+    .nav-item:first-of-type {
+      position: absolute;
+      left: -60px;
+      top: -5px;
+    }
+  }
+
+  /* @media screen and (min-width: 1080px) {
+    .nav-item:first-of-type {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50px;
+    }
+  } */
   /********************************************/
   

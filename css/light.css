@@ -1,0 +1,63 @@
+body {
+    background-color: #fefefe;
+    color: #000;
+  }
+
+  .footer, .feature-image, .collapsible {
+    background-color: rgba(225, 0, 0, 0.1);
+    color: #000;
+  }
+
+  .footer {
+    background-color: rgba(178, 34, 34, 0.4);
+  }
+
+  .active {
+    background-color: rgba(255, 51, 51, 0.5);
+  }
+
+  .content {
+    background-color: rgba(225, 0, 0, 0.1);
+  }
+
+  .mms-feature:hover {
+    color: #555;
+  }
+
+  .sep img {
+    height: 30px;
+  }
+
+  .copyright {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar-collapse {
+    background-color: #ccc;
+  }
+
+  .navbar-toggler > span {
+    background-color: #000;;
+  }
+
+  .para1, .para2 {
+    border-color: #555;
+  }
+
+  .dropdown {
+    background-color: #ccc;
+  }
+
+  @media screen and (min-width: 850px) {
+    .sep img {
+      height: 45px;
+    }
+
+    .navbar-collapse {
+      background-color: transparent;
+    }
+
+    .dropdown {
+        background-color: #fff;
+      }
+  }

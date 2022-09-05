@@ -7,23 +7,26 @@
     <title>OJ Technologies LTD</title>
     <meta name="description" content="Africa's Leading Health Tech Company">
     <meta name="author" content="OJ Technologies LTD Prdoduct Team||Emmanuel Ojighoro">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap" rel="stylesheet"> 
 
     <link rel="icon" href="img/logoIcon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="css/dark.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="css/light.css">
+
     <script src="https://kit.fontawesome.com/c6bdfdefce.js" crossorigin="anonymous"></script>
+    <!-- Dark theme module from google chrome labs -->
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+
 </head>
 <body>
     <!-- Mobile first -->
@@ -42,6 +45,11 @@
                 <span class="navbar-close">&times;</span>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="">
+                                <dark-mode-toggle id="dark-mode-toggle-2"></dark-mode-toggle>
+                            </a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                         <li class="nav-item products-toggle">
@@ -57,7 +65,6 @@
                 </div>
             </div>
         </nav>
-        <!-- End Navbar -->
     </header>
 
     <!-- Main section -->
@@ -101,6 +108,7 @@
                 <div class="partners-container">
                     <picture class="sep">
                         <source srcset="img/re-Mw.png" media="(prefers-color-scheme: dark)">
+                        <source srcset="img/mw.png" media="(prefers-color-scheme: light)">
                         <img src="img/mw.png" width="90px" height="30px" alt="MarketWatch">
                     </picture>
                     <picture>
