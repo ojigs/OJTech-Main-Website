@@ -108,6 +108,10 @@
     font-weight: 900;
   }
 
+  .small {
+    font-size: 0.85rem;
+  }
+
   /******************************************
   /* LAYOUT
   /*******************************************/
@@ -214,6 +218,14 @@
     display: block;
   }
 
+  .mms-drop::before {
+    content: "";
+    width: 2em;
+    height: 2em;
+    border-radius: 1.1em;
+    background-image: url('../img/m1.png');
+  }
+
   .products-toggle:hover .dropdown {
     display: block;
   }
@@ -274,8 +286,15 @@
 
     .dropdown {
       position: absolute;
-      min-width: max-content;
+      /* min-width: max-content; */
       background-color: #fff;
+      top: 2em;
+      margin: 0 auto;
+    }
+
+    .mms-drop, .ehr-drop, .drs-drop {
+      min-width: 50%;
+      float: left;
     }
   }
 

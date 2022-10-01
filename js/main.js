@@ -4,6 +4,7 @@ const navbarClose = document.querySelector('.navbar-close')
 const navbarCollapse = document.querySelector('.navbar-collapse')
 const source = document.querySelectorAll('source')
 const partners = document.querySelectorAll('.partners-container')
+const productsToggle = document.querySelector('.products-toggle')
 
 
 for (let i=0; i < collapsibleButton.length; i++) {
@@ -46,3 +47,13 @@ navbarClose.addEventListener('click', function() {
         }   
     })
   });
+
+// Product nav toggle
+productsToggle.addEventListener('click', () => {
+    var x = document.querySelector(".dropdown");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+})
