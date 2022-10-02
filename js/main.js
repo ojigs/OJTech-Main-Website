@@ -51,9 +51,9 @@ navbarClose.addEventListener('click', function() {
 // Product nav toggle
 productsToggle.addEventListener('click', () => {
     var x = document.querySelector(".dropdown");
-    if (x.style.display === "block") {
+    if (x.style.display === "flex") {
         x.style.display = "none";
     } else {
-        x.style.display = "block";
+        x.style.display = "flex";
     }
 })

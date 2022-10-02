@@ -210,6 +210,7 @@
     min-width: min-content;
     background-color: #ccc;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1em;
   }
 
   .dropdown a {
@@ -218,12 +219,27 @@
     display: block;
   }
 
-  .mms-drop::before {
+  .mms-drop, .ehr-drop, .drs-drop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .mms-drop::before, .ehr-drop::before, .drs-drop::before {
     content: "";
     width: 2em;
     height: 2em;
     border-radius: 1.1em;
     background-image: url('../img/m1.png');
+    background-size: cover;
+  }
+
+  .ehr-drop::before {
+    background-image: url('../img/e1.png');
+  }
+
+  .drs-drop::before {
+    background-image: url('../img/d1.png');
   }
 
   .products-toggle:hover .dropdown {
@@ -235,6 +251,21 @@
   }
 
   /* Media Queries */
+  @media screen and (max-width: 709px) {
+    .dropdown {
+      flex-direction: column;
+    }
+  }
+  @media screen and (min-width: 710px) and (max-width: 849px) {
+    .dropdown {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .mms-drop, .ehr-drop, .drs-drop {
+      flex-basis: 50%;
+    }
+  }
   @media screen and (min-width: 850px) {
     .header {
       margin-bottom: 1em;
@@ -286,15 +317,16 @@
 
     .dropdown {
       position: absolute;
-      /* min-width: max-content; */
+      min-width: 700px;
       background-color: #fff;
       top: 2em;
       margin: 0 auto;
+      flex-wrap: wrap;
+      
     }
 
     .mms-drop, .ehr-drop, .drs-drop {
-      min-width: 50%;
-      float: left;
+      width: 50%;
     }
   }
 
@@ -986,7 +1018,6 @@
   }
 
   .anime::after {
-    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
