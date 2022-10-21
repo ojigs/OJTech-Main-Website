@@ -19,10 +19,10 @@ body {
   .mms-feature:hover {
     color: #fff;
   }
-
+/* 
   .sep img {
     height: 20px;
-  }
+  } */
 
   .copyright {
     color: #ccc;
@@ -49,9 +49,9 @@ body {
   }
 
   @media screen and (min-width: 850px) {
-    .sep img {
+    /* .sep img {
       height: 30px;
-    }
+    } */
 
     .navbar-collapse {
       background-color: transparent;

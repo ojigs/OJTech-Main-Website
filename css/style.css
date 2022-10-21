@@ -131,6 +131,22 @@
     display: inline-block;
   }
 
+  .navbar-brand::before {
+    content: "";
+    display: block;
+    float: left;
+    margin-right: 7px;
+    height: 100%;
+    width: 32px;
+    background-image: url('../img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .navbar-brand:hover {
+    color: #f00;
+  }
+
   .navbar-toggler {
     display: block;
     padding: 0;
@@ -281,7 +297,7 @@
     }
 
     .navbar .container {
-      padding: 0 1rem
+      padding: 0 1rem 0 0
     }
 
     .navbar-brand {
@@ -382,8 +398,13 @@
   .partners-container {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    row-gap: 1em;
+    gap: 1em;
+  }
+
+  .partners-container img {
+    filter: grayscale(100%);
   }
 
   .shapes > div {
@@ -441,7 +462,7 @@
 
       .partners-container img {
         width: 135px;
-        height: 45px;
+        height: 85px;
       }
 
       .shapes > div {
@@ -507,6 +528,21 @@
     background-size: cover;
     border-radius: 10px;
     position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image-banner.mms-banner {
+    background-image: url('../img/mms1.png');
+  }
+
+  .image-banner.ers-banner {
+    background-image: url('../img/ehr.png');
+  }
+
+  .image-banner.drs-banner {
+    background-image: url('../img/DRS\ 1\(1\).png');
   }
 
   .image-banner > img {
@@ -580,6 +616,11 @@
     margin-bottom: 1.5em;
   }
 
+  .mail-button.product {
+    padding: 0 1.5em;
+    margin-top: 1em;
+  }
+
   /* Media Queries */ 
   @media screen and (min-width: 1080px) {
     .product .container {
@@ -598,7 +639,7 @@
     .feature-image {
       min-height: 550px;
       position: relative;
-      /* align-self: center; */
+      margin-bottom: 0;
     }
 
     /* .image-banner {
