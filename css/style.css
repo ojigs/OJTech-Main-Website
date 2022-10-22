@@ -1096,6 +1096,11 @@
 
   .card-info {
     font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .card-info:hover {
+    transform: scale(1.01, 1.01);
   }
 
   .card-info i {
