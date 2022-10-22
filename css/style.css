@@ -6,6 +6,13 @@
 *{
     box-sizing: border-box;
 }
+
+/* Clearfix Hack */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   
   /******************************************
   /* BASE STYLE
@@ -1079,7 +1086,7 @@
 
   /* CONTACT PAGE */
   /* Contact section */
-  .contact .container {
+  .contact-section .container {
     margin-top: 3rem;
   }
 
@@ -1100,14 +1107,79 @@
     font-size: 1rem;
   }
 
-  .card-info i, .card-info p, .card-info hr {
+  .card-info i, .card-info p, .card hr {
     color: rgba(0, 0, 0, 0.7);
   }
 
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  .control-form, .text-area {
+    margin-bottom: 1em;
   }
+
+  .control-form label, .text-area label {
+    display: block;
+    font-size: 0.8em;
+  }
+
+  .control-form input {
+    width: 100%;
+    /* height: 2em; */
+    outline: none;
+  }
+  .contact-form input, .text-area textarea {
+    padding: 7px 5px;
+  }
+
+  .text-area textarea {
+    width: 100%;
+    resize: none;
+    outline: none;
+  }
+
+  .contact-form .mail-button {
+    border-radius: 5px;
+    width: 100%;
+    font-size: 0.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .contact-info {
+    margin-top: 2em;
+  }
+
+  .contact-info h3 {
+    margin-bottom: 1em;
+  }
+
+  .contact-location {
+    display: flex;
+    gap: 1em;
+  }
+
+  .location-info p {
+    margin-bottom: 1em;
+  }
+
+  .contact-location i {
+    color: #f00;
+  }
+
+  /* Media queries */
+  @media screen and (min-width: 1080px) {
+    .contact-section {
+      display: flex;
+      gap: 2em;
+      align-items: center;
+      padding-top: 3rem;
+      flex-direction: row-reverse;
+    }
+
+    .contact-specify {
+      padding: 2em;
+      box-shadow: 3px 3px 16px 4px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+
   /********************************************/
   

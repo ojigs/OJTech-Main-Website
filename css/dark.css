@@ -48,6 +48,15 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
   }
 
+  .contact-form input, .text-area textarea {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .card-info i, .card-info p, .card hr {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
   @media screen and (min-width: 850px) {
     /* .sep img {
       height: 30px;
@@ -56,4 +65,10 @@ body {
     .navbar-collapse {
       background-color: transparent;
     }
+  }
+
+  @media screen and (min-width: 1080px) {
+    .contact-specify {
+      background-color: rgba(225, 0, 0, 0.1);
+    }  
   }

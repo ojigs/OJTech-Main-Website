@@ -76,126 +76,129 @@
         </nav>
     </header>
 
-    <section class="contact">
-        <div class="container">
-            <h2>How Can <span class="red">We</span> Be Of <span class="red">Help</span></h2>
-            <p class="contact-text">Please select a topic below based on your enquiry. If you don't find what you need, fill out our contact. form</p>
-            <div class="card">
-                <div class="card-info">
-                    <h3>Book a Demo</h3>
-                    <div class="clearfix">
-                        <i class="fa-solid fa-greater-than"></i>
+    <section class="contact-section">
+        <div class="contact-decide">
+            <div class="container">
+                <h2>How Can <span class="red">We</span> Be Of <span class="red">Help</span></h2>
+                <p class="contact-text">Please select a topic below based on your enquiry. If you don't find what you need, fill out our contact. form</p>
+                <div class="card">
+                    <div class="card-info">
+                        <h3>Book a Demo</h3>
+                        <div class="clearfix">
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <p>Request a demo for one of our products</p>
                     </div>
-                    <p>Request a demo for one of our products</p>
-                </div>
-                <hr>
-                <div class="card-info">
-                    <h3>Get Inspired</h3>
-                    <div class="clearfix">
-                        <i class="fa-solid fa-greater-than"></i>
+                    <hr>
+                    <div class="card-info">
+                        <h3>Get Inspired</h3>
+                        <div class="clearfix">
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <p>Discover the many ways our products serve your need</p>
                     </div>
-                    <p>Discover the many ways our products serve your need</p>
-                </div>
-                <hr>
-                <div class="card-info">
-                    <h3>Become a Partner</h3>
-                    <div class="clearfix">
-                        <i class="fa-solid fa-greater-than"></i>
+                    <hr>
+                    <div class="card-info">
+                        <h3>Become a Partner</h3>
+                        <div class="clearfix">
+                            <i class="fa-solid fa-greater-than"></i>
+                        </div>
+                        <p>Join our partners program and earn commissions</p>
                     </div>
-                    <p>Join our partners program and earn commissions</p>
                 </div>
             </div>
+    
+            
+            <!-- Partners -->
+           <section class="partners">
+               <div class="container text-center">
+                   <h2> Backed by</h2>
+                   <div class="partners-container">
+                       <picture class="sep">
+                           <source srcset="img/re-aws.png" media="">
+                           <img src="img/aws.png" width="125px" height="" alt="AWS">
+                       </picture>
+                       <picture>
+                           <!-- <source srcset="img/re-forbes.png" media=""> -->
+                           <img src="img/bmu.png" width="85px" height="" alt="BMU">
+                       </picture>
+                       <picture>
+                           <!-- <source srcset="img/re-business.png" media=""> -->
+                           <img src="img/co-creation.png" width="185px" height="" alt="co-creation">
+                       </picture>
+                       <picture>
+                           <!-- <source srcset="img/re-wired.png" media=""> -->
+                           <img src="img/google.png" width="145px" height="" alt="google">
+                       </picture>
+                       <picture>
+                           <source srcset="img/re-nars.png" media="">
+                           <img src="img/nars.png" width="85px" height="" alt="NARS">
+                       </picture>
+                       <picture>
+                           <!-- <source srcset="img/re-wired.png" media=""> -->
+                           <img src="img/nimsa.png" width="125px" height="" alt="NIMSA">
+                       </picture>
+                       <picture>
+                           <!-- <source srcset="img/re-wired.png" media=""> -->
+                           <img src="img/sail.png" width="85px" height="" alt="sail">
+                       </picture>
+                   </div>
+               </div>
+           </section>
+           <!-- End Partners -->
         </div>
 
-         <!-- Partners -->
-         <section class="partners">
-            <div class="container text-center">
-                <h2> Backed by</h2>
-                <div class="partners-container">
-                    <picture class="sep">
-                        <source srcset="img/re-aws.png" media="">
-                        <img src="img/aws.png" width="125px" height="" alt="AWS">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-forbes.png" media=""> -->
-                        <img src="img/bmu.png" width="85px" height="" alt="BMU">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-business.png" media=""> -->
-                        <img src="img/co-creation.png" width="185px" height="" alt="co-creation">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-wired.png" media=""> -->
-                        <img src="img/google.png" width="145px" height="" alt="google">
-                    </picture>
-                    <picture>
-                        <source srcset="img/re-nars.png" media="">
-                        <img src="img/nars.png" width="85px" height="" alt="NARS">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-wired.png" media=""> -->
-                        <img src="img/nimsa.png" width="125px" height="" alt="NIMSA">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-wired.png" media=""> -->
-                        <img src="img/sail.png" width="85px" height="" alt="sail">
-                    </picture>
-                </div>
-            </div>
-        </section>
-        <!-- End Partners -->
+       <div class="container contact-specify">
+           <form class="contact-form" action="" method="POST">
+               <div class="name">
+                   <div class="control-form">
+                     <label for="firstName">FIRST NAME <span class="red">*</span></label>
+                     <input type="text" id="firstName" required>
+                   </div>
+                   <div class="control-form">
+                     <label for="lastName">LAST NAME <span class="red">*</span></label>
+                     <input type="text" id="lastName" required>
+                   </div>
+               </div>
+               <div class="control-form">
+                 <label for="email">EMAIL <span class="red">*</span></label>
+                 <input type="email" id="email" required>
+               </div>
+               <div class="text-area">
+                 <label for="message">MESSAGE <span class="red">*</span></label>
+                 <textarea name="" id="message" cols="30" rows="3" required></textarea>
+               </div>
+               <div class="text-area">
+                 <label for="additionalDetails">ADDITIONAL DETAILS</label>
+                 <textarea name="" id="additionalDetails" cols="30" rows="7"></textarea>
+               </div>
+               <button type="submit" class="mail-button">Send Message</button>
+             </form>
+             <div class="contact-info">
+                 <h3>Contact Information</h3>
+                 <div class="contact-location">
+                     <span><i class="fa-solid fa-location-dot"></i></span>
+                     <div class="location-info">
+                         <p>10 Animashaun drive, Abesan Estate, Ipaja, Lagos, Nigeria. </p>
+                         <p>2nd Floor, Nwachinemerem Plaza, Ifite, Awka, Anambra State, Nigeria.</p>
+                     </div>
+                 </div>
+                 <div class="contact-location">
+                     <span><i class="fa-solid fa-phone"></i></span>
+                     <div class="location-info">
+                         <p>+234 (0) 814 393 1210</p>
+                     </div>
+                 </div>
+                 <div class="contact-location">
+                     <span><i class="fa-solid fa-envelopes-bulk"></i></span>
+                     <div class="location-info">
+                         <p>admin@ojtechnlogiesltd.com</p>
+                     </div>
+                 </div>
+             </div>
+       </div>
 
-        <div class="container">
-            <form class="contact-form" action="" method="POST">
-                <div class="name">
-                    <div>
-                      <label for="firstName">FIRST NAME <span class="red">*</span></label>
-                      <input type="text" id="firstName" required>
-                    </div>
-                    <div>
-                      <label for="lastName">LAST NAME <span class="red">*</span></label>
-                      <input type="text" id="lastName" required>
-                    </div>
-                </div>
-                <div>
-                  <label for="email">EMAIL <span class="red">*</span></label>
-                  <input type="email" id="email" required>
-                </div>
-                <div>
-                  <label for="message">MESSAGE <span class="red">*</span></label>
-                  <textarea name="" id="message" cols="30" rows="10" required></textarea>
-                </div>
-                <div>
-                  <label for="additionalDetails">ADDITIONAL DETAILS</label>
-                  <textarea name="" id="additionalDetails" cols="30" rows="10"></textarea>
-                </div>
-                <button type="submit" class="">Send Message</button>
-              </form>
-        </div>
 
-        <div class="contact-info">
-            <h3>Contact Information</h3>
-            <div class="contact-location">
-                <span><i class="fa-solid fa-location-dot"></i></span>
-                <div class="location-info">
-                    <p>10 Animashaun drive, Abesan Estate, Ipaja, Lagos, Nigeria. </p>
-                    <p>2nd Floor, Nwachinemerem Plaza, Ifite, Awka, Anambra State, Nigeria.</p>
-                </div>
-            </div>
-            <div class="contact-location">
-                <span><i class="fa-solid fa-phone"></i></span>
-                <div class="location-info">
-                    <p>+234 (0) 814 393 1210</p>
-                </div>
-            </div>
-            <div class="contact-location">
-                <span><i class="fa-solid fa-envelopes-bulk"></i></span>
-                <div class="location-info">
-                    <p>admin@ojtechnlogiesltd.com</p>
-                </div>
-            </div>
-
-        </div>
     </section>
 
     <!-- Footer -->
