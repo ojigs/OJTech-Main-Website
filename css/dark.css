@@ -51,6 +51,7 @@ body {
   .contact-form input, .text-area textarea {
     background-color: transparent;
     color: #fff;
+    border: 1px solid #fff;
   }
 
   .card-info i, .card-info p, .card hr {
