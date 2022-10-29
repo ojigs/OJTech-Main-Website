@@ -22,6 +22,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="css/dark.css">
     <link rel="stylesheet" media="(prefers-color-scheme: light)" href="css/light.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
     <script src="https://kit.fontawesome.com/c6bdfdefce.js" crossorigin="anonymous"></script>
     <!-- Dark theme module from google chrome labs -->
@@ -114,35 +116,58 @@
         <section class="partners">
             <div class="container text-center">
                 <h2> Backed by</h2>
-                <div class="partners-container">
-                    <picture class="sep">
-                        <source srcset="img/re-aws.png" media="">
-                        <img src="img/aws.png" width="125px" height="" alt="AWS">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-forbes.png" media=""> -->
-                        <img src="img/bmu.png" width="85px" height="" alt="BMU">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-business.png" media=""> -->
-                        <img src="img/co-creation.png" width="185px" height="" alt="co-creation">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-wired.png" media=""> -->
-                        <img src="img/google.png" width="145px" height="" alt="google">
-                    </picture>
-                    <picture>
-                        <source srcset="img/re-nars.png" media="">
-                        <img src="img/nars.png" width="85px" height="" alt="NARS">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-wired.png" media=""> -->
-                        <img src="img/nimsa.png" width="125px" height="" alt="NIMSA">
-                    </picture>
-                    <picture>
-                        <!-- <source srcset="img/re-wired.png" media=""> -->
-                        <img src="img/sail.png" width="85px" height="" alt="sail">
-                    </picture>
+                <div class="partners-container swiper mySwiper">
+                    <!-- <div class=""> -->
+                        <div class="swiper-wrapper"> 
+                            <div class="swiper-slide">
+                                <picture class="sep">
+                                    <source srcset="img/re-aws.png" media="">
+                                    <img src="img/aws.png" width="125px" height="" alt="AWS">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <!-- <source srcset="img/re-forbes.png" media=""> -->
+                                    <img src="img/bmu.png" width="85px" height="" alt="BMU">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <!-- <source srcset="img/re-business.png" media=""> -->
+                                    <img src="img/co-creation.png" width="185px" height="" alt="co-creation">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <!-- <source srcset="img/re-wired.png" media=""> -->
+                                    <img src="img/google.png" width="145px" height="" alt="google">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/re-nars.png" media="">
+                                    <img src="img/nars.png" width="85px" height="" alt="NARS">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <!-- <source srcset="img/re-wired.png" media=""> -->
+                                    <img src="img/nimsa.png" width="125px" height="" alt="NIMSA">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <!-- <source srcset="img/re-wired.png" media=""> -->
+                                    <img src="img/sail.png" width="85px" height="" alt="sail">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <img src="img/nhit.png" width="85px" height="" alt="NHIT">
+                                </picture>
+                            </div>
+                        </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </section>
@@ -360,6 +385,36 @@
     </footer>
 
     <!-- Script -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        autoplay: {
+          delay: 2500,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            747: {
+                slidesPerView: 3
+            },
+            850: {
+                slidesPerView: 4
+            }
+        }
+      });
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>

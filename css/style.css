@@ -1211,5 +1211,34 @@
   }
 
 
+  /* swiper */
+  .swiper {
+        width: 100%;
+        /* height: 200px; */
+      }
+
+      .swiper-slide {
+        text-align: center;
+        /* background: #fff; */
+
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      /* .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      } */
+
+
   /********************************************/
   
