@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on [OR]
+RewriteCond %{HTTP_HOST} !^www.YOURDOMAIN.COM$ [NC]
+RewriteRule ^(.*)$ https://www.YOURDOMAIN.COM/$1 [L,R=301]
