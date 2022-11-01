@@ -136,30 +136,34 @@
         </div>
 
        <div class="container contact-specify">
-           <form class="contact-form" action="" method="POST">
+           <form class="contact-form" action="controller/contact.php" method="POST">
                <div class="name">
                    <div class="control-form">
                      <label for="firstName">FIRST NAME <span class="red">*</span></label>
-                     <input type="text" id="firstName" required>
+                     <input type="text" id="firstName" name="fname" required>
                    </div>
                    <div class="control-form">
                      <label for="lastName">LAST NAME <span class="red">*</span></label>
-                     <input type="text" id="lastName" required>
+                     <input type="text" id="lastName" name="lname" required>
                    </div>
                </div>
                <div class="control-form">
                  <label for="email">EMAIL <span class="red">*</span></label>
-                 <input type="email" id="email" required>
+                 <input type="email" id="email" name="email" required>
                </div>
+               <div class="control-form">
+                <label for="email">PHONE NUMBER <span class="red">*</span></label>
+                <input type="phone" id="phone" name="phone" required>
+              </div>
                <div class="text-area">
                  <label for="message">MESSAGE <span class="red">*</span></label>
-                 <textarea name="" id="message" cols="30" rows="3" required></textarea>
+                 <textarea name="msg" id="message" cols="30" rows="3" required></textarea>
                </div>
                <div class="text-area">
                  <label for="additionalDetails">ADDITIONAL DETAILS</label>
-                 <textarea name="" id="additionalDetails" cols="30" rows="7"></textarea>
+                 <textarea name="extra" id="additionalDetails" cols="30" rows="7"></textarea>
                </div>
-               <button type="submit" class="mail-button">Send Message</button>
+               <button type="submit" name="cont-form" class="mail-button">Send Message</button>
              </form>
        </div>
 
