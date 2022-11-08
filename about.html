@@ -22,6 +22,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="css/dark.css">
     <link rel="stylesheet" media="(prefers-color-scheme: light)" href="css/light.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
     <script src="https://kit.fontawesome.com/c6bdfdefce.js" crossorigin="anonymous"></script>
     <!-- Dark theme module from google chrome labs -->
@@ -47,7 +49,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a href="">
-                                <dark-mode-toggle id="dark-mode-toggle-2"></dark-mode-toggle>
+                                <dark-mode-toggle id="dark-mode-toggle-2" permanent="true"></dark-mode-toggle>
                             </a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -76,99 +78,96 @@
         </nav>
     </header>
 
-    <section class="contact-section">
-        <span class="contact-icons"><i class="fa-solid fa-users"></i></span>
-        <div class="contact-decide">
-            <div class="container">
-                <h2>How Can <span class="red">We</span> Be Of <span class="red">Help</span></h2>
-                <p class="contact-text">Please select a topic below based on your enquiry. If you don't find what you need, fill out our contact. form</p>
-                <div class="card">
-                    <div class="card-info">
-                        <h3>Book a Demo</h3>
-                        <div class="clearfix">
-                            <i class="fa-solid fa-greater-than"></i>
-                        </div>
-                        <p>Request a demo for one of our products</p>
-                    </div>
-                    <hr>
-                    <div class="card-info">
-                        <h3>Get Inspired</h3>
-                        <div class="clearfix">
-                            <i class="fa-solid fa-greater-than"></i>
-                        </div>
-                        <p>Discover the many ways our products serve your need</p>
-                    </div>
-                    <hr>
-                    <div class="card-info">
-                        <h3>Become a Partner</h3>
-                        <div class="clearfix">
-                            <i class="fa-solid fa-greater-than"></i>
-                        </div>
-                        <p>Join our partners program and earn commissions</p>
-                    </div>
-                </div>
+    <!-- About section -->
+    <section class="about-us">
+        <div class="about-info container mt-5">
+            <div class=" about-text col-md-6 lg-6">
+                <h1><span class="red">About</span> us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis accusantium deleniti deserunt eos unde aspernatur neque et omnis natus nemo fugit tenetur exercitationem, tempora itaque nobis voluptas! Sed, quo.</p>
             </div>
-    
-            <div class="contact-info">
-                <div class="container">
-                    <h3>Contact Information</h3>
-                    <div class="contact-location">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
-                        <div class="location-info">
-                            <p>10 Animashaun drive, Abesan Estate, Ipaja, Lagos, Nigeria. </p>
-                            <p>2nd Floor, Nwachinemerem Plaza, Ifite, Awka, Anambra State, Nigeria.</p>
-                        </div>
-                    </div>
-                    <div class="contact-location">
-                        <span><i class="fa-solid fa-phone"></i></span>
-                        <div class="location-info">
-                            <p>+234 (0) 814 393 1210</p>
-                        </div>
-                    </div>
-                    <div class="contact-location">
-                        <span><i class="fa-solid fa-envelopes-bulk"></i></span>
-                        <div class="location-info">
-                            <p>admin@ojtechnlogiesltd.com</p>
-                        </div>
+
+            <div class="about-image">
+                <div class="image-container">
+                    <div class="about-image-bg">
+                        <img src="./img/about-img.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-
-       <div class="container contact-specify">
-           <form class="contact-form" action="controller/contact.php" method="POST">
-               <div class="name">
-                   <div class="control-form">
-                     <label for="firstName">FIRST NAME <span class="red">*</span></label>
-                     <input type="text" id="firstName" name="fname" required>
-                   </div>
-                   <div class="control-form">
-                     <label for="lastName">LAST NAME <span class="red">*</span></label>
-                     <input type="text" id="lastName" name="lname" required>
-                   </div>
-               </div>
-               <div class="control-form">
-                 <label for="email">EMAIL <span class="red">*</span></label>
-                 <input type="email" id="email" name="email" required>
-               </div>
-               <div class="control-form">
-                <label for="email">PHONE NUMBER <span class="red">*</span></label>
-                <input type="phone" id="phone" name="phone" required>
-              </div>
-               <div class="text-area">
-                 <label for="message">MESSAGE <span class="red">*</span></label>
-                 <textarea name="msg" id="message" cols="30" rows="3" required></textarea>
-               </div>
-               <div class="text-area">
-                 <label for="additionalDetails">ADDITIONAL DETAILS</label>
-                 <textarea name="extra" id="additionalDetails" cols="30" rows="7"></textarea>
-               </div>
-               <button type="submit" name="cont-form" class="mail-button">Send Message</button>
-             </form>
-       </div>
-
-
     </section>
+    <!-- End About section -->
+
+    <!-- Preamble section -->
+    <section class="preamble">
+        <div class="preamble-container">
+            <section class="vision">
+                <h2>Our <span class="red">vision</span></h2>
+                <p>To be the continent's leading innovator, creating medical tech solutions.</p>
+            </section>
+            <section class="mission">
+                <h2>Our <span class="red">mission</span></h2>
+                <p>We are dedicated to providing innovative and futuristic technological solutions that meet the various needs of the medical field across Africa.</p>
+            </section>
+        </div>
+    </section>
+    <!-- End preamble -->
+
+    <!-- Founders section -->
+    <section class="founders">
+        <div class="container">
+            <h2 class="text-center">Our Founders</h2>
+            <div class="bg-red"></div>
+            <div class="profile-cards">
+    
+                <div class="card card-1">
+                    <img
+                        src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
+                    <div class="card-details">
+                        <h3 class="card-details-title">Kailey Nance</h3>
+                        <div class="card-details-social">
+                            <ul>
+                                <li><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
+                                <li><a href="#"><img src="./img/instagram.svg" alt="instagram"></a></li>
+                                <li><a href="#"><img src="./img/linkedin.svg" alt="linkedin"></a></li>
+                            </ul>
+                        </div> 
+                    </div> 
+                </div>
+    
+                <div class="card card-2">   
+                    <img
+                        src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">  
+                    <div class="card-details">   
+                        <h3 class="card-details-title">Vincent Kingston</h3>    
+                        <div class="card-details-social">    
+                            <ul>
+                                <li><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
+                                <li><a href="#"><img src="./img/instagram.svg" alt="instagram"></a></li>
+                                <li><a href="#"><img src="./img/linkedin.svg" alt="linkedin"></a></li>
+                            </ul>  
+                        </div>   
+                    </div>    
+                </div>
+    
+                <div class="card card-3"> 
+                    <img
+                        src="https://images.pexels.com/photos/4814633/pexels-photo-4814633.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                    <div class="card-details">
+                        <h3 class="card-details-title">Evalyn Stephany</h3>
+                        <div class="card-details-social">
+                            <ul>
+                                <li><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
+                                <li><a href="#"><img src="./img/instagram.svg" alt="instagram"></a></li>
+                                <li><a href="#"><img src="./img/linkedin.svg" alt="linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -236,6 +235,39 @@
             </div>
         </div>
     </footer>
+
+    <!-- Script -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            747: {
+                slidesPerView: 3
+            },
+            850: {
+                slidesPerView: 4
+            }
+        }
+      });
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>

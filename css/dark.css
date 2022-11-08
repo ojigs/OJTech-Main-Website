@@ -73,3 +73,13 @@ body {
       background-color: rgba(225, 0, 0, 0.1);
     }  
   }
+
+  /* About page */ 
+  .about-image-bg {
+    background-color: #450000;
+    box-shadow: 5px 5px 10px #f00;
+  }
+
+  .about-image-bg:hover {
+    box-shadow: 10px 10px 10px #f00;
+  }
