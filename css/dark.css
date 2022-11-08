@@ -83,3 +83,7 @@ body {
   .about-image-bg:hover {
     box-shadow: 10px 10px 10px #f00;
   }
+
+  .reshape::before {
+    background-image: url('../img/reshape-dark.jpg');
+  }
