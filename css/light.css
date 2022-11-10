@@ -24,10 +24,6 @@ body {
     color: #555;
   }
 
-  /* .sep img {
-    height: 30px;
-  } */
-
   .copyright {
     color: rgba(0, 0, 0, 0.5);
   }
@@ -68,4 +64,8 @@ body {
     .dropdown {
         background-color: #fff;
       }
+  }
+
+  .member-social {
+    background-color: rgba(225, 0, 0, 0.1);
   }

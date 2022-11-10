@@ -1288,6 +1288,10 @@
       gap: 3rem;
     }
 
+    .about-text, .about-image {
+      width: 50%;
+    }
+
     .about-text h2 {
       margin-bottom: 3rem;
     }
@@ -1303,6 +1307,7 @@
       position: relative;
       transition: all 0.4s ease-in;
       box-shadow: 5px 5px #f00;
+      width: 100%;
     }
 
     .about-image-bg:hover {
@@ -1310,22 +1315,8 @@
       box-shadow: 10px 10px #f00;
     }
 
-    .grid-dot {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(4, auto);
-      justify-content: space-evenly;
-      align-items: center;
-      position: absolute;
-      bottom: 0;
-      left: 40%;
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: rgba(255, 51, 51, 0.5);
+    .about-image-bg > img {
+      width: 100%;
     }
 
     /* Preamble section */
@@ -1473,18 +1464,29 @@
 
     /* Team section */
     .member {
-      border: 1px solid red;
-      padding: 100px;
+      margin-top: 75px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
       gap: 50px;
+    }
+
+    .member-info {
+      width: 300px;
+      height: 500px;
+      position: relative;
+    }
+
+    .member-info h3 {
+      font-size: 18px;
+      margin: 0.5em 0;
     }
 
     .member-photo {
       width: 300px;
       height: 400px;
+      position: relative;
     }
 
     .member-photo > img {
@@ -1493,25 +1495,57 @@
       object-fit: cover;
     }
 
+    .member-photo:hover > .member-social {
+      display: flex;
+    }
+
     .member-social {
       display: flex;
       align-items: center;
       justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: none;
     }
 
     .social-bg {
       width: 35px;
       height: 35px;
       color: #272727;
-      background-color: white;
       border-radius: 50px;
-      box-shadow: 0 5px 4px grey;
       cursor: pointer;
       transition: all 0.3s;
       margin-right: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .bg-twitter {
+      background-color: #00acee;
+    }
+
+    .bg-twitter:hover {
+      box-shadow: 0 5px 4px rgba(0, 172, 238, 0.5);
+    }
+
+    .bg-linkedin {
+      background-color: #0a66c2;
+    }
+
+    .bg-linkedin:hover {
+      box-shadow: 0 5px 4px rgba(10, 102, 194, 0.5);
+    }
+
+    .bg-instagram {
+      background-color: #fbad50 ;
+    }
+    
+    .bg-instagram:hover {
+      box-shadow: 0 5px 4px rgba(251, 173, 80, 0.5);
     }
 
   /********************************************/
