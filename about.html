@@ -85,8 +85,8 @@
 
     <!-- About section -->
     <section class="about-us">
-        <div class="about-info container mt-5">
-            <div class=" about-text col-md-6 lg-6">
+        <div class="about-info container">
+            <div class=" about-text">
                 <h2><span class="red">About</span> OJ Technologies</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis accusantium deleniti deserunt eos unde aspernatur neque et omnis natus nemo fugit tenetur exercitationem, tempora itaque nobis voluptas! Sed, quo.</p>
             </div>
@@ -104,14 +104,14 @@
 
     <!-- Preamble section -->
     <section class="preamble">
-        <div class="preamble-container">
+        <div class="container preamble-container">
             <section class="vision">
-                <h2>Our <span class="red">vision</span></h2>
-                <p>To be the continent's leading innovator, creating medical tech solutions.</p>
+                <h2 class="text-center">Our <span class="red">vision</span></h2>
+                <p class="text-center">To be the continent's leading innovator, creating medical tech solutions.</p>
             </section>
             <section class="mission">
-                <h2>Our <span class="red">mission</span></h2>
-                <p>We are dedicated to providing innovative and futuristic technological solutions that meet the various needs of the medical field across Africa.</p>
+                <h2 class="text-center">Our <span class="red">mission</span></h2>
+                <p class="text-center">We are dedicated to providing innovative and futuristic technological solutions that meet the various needs of the medical field across Africa.</p>
             </section>
         </div>
     </section>
@@ -128,7 +128,7 @@
                     <img
                         src="./img/oj.jpg" alt="Mr. Joseph Ojighoro"width="300px" height="400px">
                     <div class="card-details">
-                        <h3 class="card-details-title">Mr. Joseph Ojighoro</h3>
+                        <h3 class="card-details-title">Joseph Ojighoro</h3>
                         <p>Founder/Chief Executive Officer</p>
                         <div class="card-details-social">
                             <ul>
@@ -144,7 +144,7 @@
                     <img
                         src="./img/Mondae.jpeg" alt="Mr. Mondae Atughonu" width="300px" height="400px">  
                     <div class="card-details">   
-                        <h3 class="card-details-title">Mr. Mondae Atughonu</h3>  
+                        <h3 class="card-details-title">Mondae Atughonu</h3>  
                         <p>Co-founder/Chief Technology Officer</p>  
                         <div class="card-details-social">    
                             <ul>
@@ -181,122 +181,137 @@
     <section class="meet-team">
         <div class="container">
             <h2 class="text-center">Meet the <span class="red">Team</span></h2>
-            <div class="member">
-                <div class="member-info">
-                    <div class="member-photo">
-                        <img src="./img/goodness.png" width="300px" height="400px" alt="meet our team member">
-                        <div class="member-social">
-                            <a class="social-bg bg-twitter" title="twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a class="social-bg bg-instagram" title="instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a class="social-bg bg-linkedin" title="linkedin">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
+            <div class="swiper teamSwiper">
+                <div class="member swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="member-info">
+                            <div class="member-photo">
+                                <img src="./img/goodness.png" width="300px" height="400px" alt="meet our team member">
+                                <div class="member-social">
+                                    <a class="social-bg bg-twitter" title="twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a class="social-bg bg-instagram" title="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a class="social-bg bg-linkedin" title="linkedin">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Goodness Okpara</h3>
+                            <p>Creative Director</p>
                         </div>
                     </div>
-                    <h3>Ms. Goodness Okpara</h3>
-                    <p>Creative Director</p>
-                </div>
-                <div class="member-info">
-                    <div class="member-photo">
-                        <img src="./img/amaku.jpg" width="300px" height="400px" alt="meet our team member">
-                        <div class="member-social">
-                            <a class="social-bg bg-twitter" title="twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a class="social-bg bg-instagram" title="instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a class="social-bg bg-linkedin" title="linkedin">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
+                    <div class="swiper-slide">
+                        <div class="member-info">
+                            <div class="member-photo">
+                                <img src="./img/amaku.png" width="300px" height="400px" alt="meet our team member">
+                                <div class="member-social">
+                                    <a class="social-bg bg-twitter" title="twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a class="social-bg bg-instagram" title="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a class="social-bg bg-linkedin" title="linkedin">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Amaku Theresa Chidiebele</h3>
+                            <p>Executive Assistant</p>
                         </div>
                     </div>
-                    <h3>Ms. Amaku Theresa Chidiebele</h3>
-                    <p>Executive Assistant</p>
-                </div>
-                <div class="member-info">
-                    <div class="member-photo">
-                        <img src="./img/efiri.jpg" width="300px" height="400px" alt="meet our team member">
-                        <div class="member-social">
-                            <a class="social-bg bg-twitter" title="twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a class="social-bg bg-instagram" title="instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a class="social-bg bg-linkedin" title="linkedin">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
+                    <div class="swiper-slide">
+                        <div class="member-info">
+                            <div class="member-photo">
+                                <img src="./img/efiri.jpg" width="300px" height="400px" alt="meet our team member">
+                                <div class="member-social">
+                                    <a class="social-bg bg-twitter" title="twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a class="social-bg bg-instagram" title="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a class="social-bg bg-linkedin" title="linkedin">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Dr. Efiri Tamaradeinyefa</h3>
+                            <p>Product Quality Assurance/Community Lead</p>
                         </div>
                     </div>
-                    <h3>Dr. Efiri Tamaradeinyefa</h3>
-                    <p>Product Quality Assurance/Community Lead</p>
-                </div>
-                <div class="member-info">
-                    <div class="member-photo">
-                        <img src="./img/afia.jpg" width="300px" height="400px" alt="meet our team member">
-                        <div class="member-social">
-                            <a class="social-bg bg-twitter" title="twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a class="social-bg bg-instagram" title="instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a class="social-bg bg-linkedin" title="linkedin">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
+                    <div class="swiper-slide">
+                        <div class="member-info">
+                            <div class="member-photo">
+                                <img src="./img/afia.jpg" width="300px" height="400px" alt="meet our team member">
+                                <div class="member-social">
+                                    <a class="social-bg bg-twitter" title="twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a class="social-bg bg-instagram" title="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a class="social-bg bg-linkedin" title="linkedin">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Afia Pius</h3>
+                            <p>Digital Marketing</p>
                         </div>
                     </div>
-                    <h3>Mr. Afia Pius</h3>
-                    <p>Digital Marketing</p>
-                </div>
-                <div class="member-info">
-                    <div class="member-photo">
-                        <img src="./img/godwin.jpg" width="300px" height="400px" alt="meet our team member">
-                        <div class="member-social">
-                            <a class="social-bg bg-twitter" title="twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a class="social-bg bg-instagram" title="instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a class="social-bg bg-linkedin" title="linkedin">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
+                    <div class="swiper-slide">
+                        <div class="member-info">
+                            <div class="member-photo">
+                                <img src="./img/godwin.jpg" width="300px" height="400px" alt="meet our team member">
+                                <div class="member-social">
+                                    <a class="social-bg bg-twitter" title="twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a class="social-bg bg-instagram" title="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a class="social-bg bg-linkedin" title="linkedin">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Godwin Anyebe Victor</h3>
+                            <p>Business Developer</p>
                         </div>
                     </div>
-                    <h3>Mr. Godwin Anyebe Victor</h3>
-                    <p>Business Developer</p>
-                </div>
-                <div class="member-info">
-                    <div class="member-photo">
-                        <img src="./img/mmesoma.jpg" width="300px" height="400px" alt="meet our team member">
-                        <div class="member-social">
-                            <a class="social-bg bg-twitter" title="twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a class="social-bg bg-instagram" title="instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a class="social-bg bg-linkedin" title="linkedin">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
+                    <div class="swiper-slide">    
+                        <div class="member-info">
+                            <div class="member-photo">
+                                <img src="./img/mmesoma.jpg" width="300px" height="400px" alt="meet our team member">
+                                <div class="member-social">
+                                    <a class="social-bg bg-twitter" title="twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a class="social-bg bg-instagram" title="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a class="social-bg bg-linkedin" title="linkedin">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Veronica Mmesomma Ani</h3>
+                            <p>Content Writer</p>
                         </div>
                     </div>
-                    <h3>Ms. Veronica Mmesomma Ani</h3>
-                    <p>Content Writer</p>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <!-- End Team -->
 
     <!-- Partners -->
-    <section class="partners">
+    <section class="partners mar-btm-3">
         <div class="container text-center">
             <h2> Backed by</h2>
             <div class="partners-container swiper mySwiper">
@@ -422,7 +437,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-      const swiper = new Swiper(".mySwiper", {
+      const swiper1 = new Swiper(".mySwiper", {
         slidesPerView: 2,
         spaceBetween: 30,
         loop: true,
@@ -444,6 +459,33 @@
             },
             850: {
                 slidesPerView: 4
+            }
+        }
+      });
+
+      const swiper2 = new Swiper(".teamSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+            747: {
+                slidesPerView: 2
+            },
+            1180: {
+                loop: false,
+                slidesPerView: 3
             }
         }
       });
