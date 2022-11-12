@@ -1301,6 +1301,7 @@
       transition: all 0.4s ease-in;
       box-shadow: 5px 5px #f00;
       width: 70%;
+      height: auto;
       margin: auto;
       animation: bubble 2s ease-in-out infinite alternate;
     }
