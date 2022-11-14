@@ -1418,13 +1418,14 @@
       flex-wrap: wrap;
       gap: 50px;
       margin: 30px;
-      color: black;
     }
 
     .profile-cards .card {
       width: 300px;
-      height: 400px;
+      height: 300px;
+      border-radius: 50%;
       position: relative;
+      background-color: rgba(225, 0, 0, 0.1);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       overflow: hidden;
     }
@@ -1435,7 +1436,7 @@
     }
 
     .profile-cards .card:hover > img {
-      filter: blur(3px);
+      /* filter: blur(3px); */
       transform: scale(1.2);
     }
 
@@ -1443,6 +1444,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: top;
       transition: all 0.3s;
     }
 
@@ -1458,12 +1460,13 @@
       bottom: 0;
       left: 0;
       background-color: white;
-      transform: translateY(100%);
+      /* transform: translateY(100%); */
       transition: all 0.3s;
     }
 
-    .profile-cards .card .card-details-title {
+    .card-details-title {
       font-size: 18px;
+      text-align: center;
     }
 
     .profile-cards .card .card-details-social {
@@ -1539,22 +1542,28 @@
 
     .member-photo {
       width: 300px;
-      height: 400px;
+      height: 300px;
       position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: rgba(225, 0, 0, 0.1);
+      transition: all 0.4s ease-in;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .member-photo:hover > img {
+      filter: grayscale(60%);
     }
 
     .member-photo > img {
       width: 100%;
       height: 100%;
+      height: auto;
+      transition: all 0.4s ease-in;
       object-fit: cover;
     }
 
-    .member-photo:hover > .member-social {
-      display: flex;
-    }
-
     .member-social {
-      display: flex;
       align-items: center;
       justify-content: center;
       position: absolute;
@@ -1607,7 +1616,16 @@
     }
 
     .swiper-pagination {
-      margin-top: 50px;
+      bottom: 50px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #f00 !important;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet {
+      background: rgba(255, 0, 0) !important;
     }
 
   /********************************************/
