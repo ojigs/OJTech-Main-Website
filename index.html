@@ -409,6 +409,17 @@
         }
       });
     </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/serviceworker.js')
+                .then(reg => console.log('Service worker registered', reg))
+                .catch (error => console.log('Service worker registration failed:', error))
+            })
+        } else {
+            console.log('Service worker is not supported by browser')
+        }
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
