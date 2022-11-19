@@ -1521,13 +1521,12 @@
     }
 
     /* Team section */
+    .meet-team {
+      padding-top: 6.25rem;
+    }
+
     .member {
       margin-top: 75px;
-      /* display: flex; */
-      /* align-items: center; */
-      /* justify-content: space-between; */
-      /* flex-wrap: wrap; */
-      /* gap: 50px; */
     }
 
     .member-info {
